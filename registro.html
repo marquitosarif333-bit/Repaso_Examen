@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Repaso - Registro</title>
+<style>
+body { background-color: #f4f4f4; padding: 50px; }
+.form-card { background: white; padding: 20px; border-radius: 10px; box-shadow:
+0 4px 6px rgba(0,0,0,0.1); width: 300px; margin: auto; }
+input { width: 100%; padding: 10px; margin-top: 10px; box-sizing: border-box; }
+
+.error-msg { color: red; font-size: 12px; display: block; margin-top: 5px; min-height: 15px; }
+
+button { width: 100%; margin-top: 15px; padding: 10px; background: #3498db;
+color: white; border: none; cursor: pointer; }
+</style>
+</head>
+<body>
+<form id="formRegistro" class="form-card">
+<h2>Registro</h2>
+<input type="text" id="username" placeholder="Usuario">
+<span id="errorUser" class="error-msg"></span>
+<input type="password" id="pass1" placeholder="Contraseña">
+<input type="password" id="pass2" placeholder="Confirmar Contraseña">
+<span id="errorPass" class="error-msg"></span>
+<button type="submit">Registrar</button>
+</form>
+<script src="js/registro.js"></script>
+</body>
+</html>
